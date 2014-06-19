@@ -10,7 +10,7 @@ class Solution:
 	# @param head, a RandomListNode
 	# @return a RandomListNode
 	def copyRandomList(self, head):
-		pdb.set_trace()
+		#pdb.set_trace()
 		if head == None:
 			return None
 		t = head
@@ -20,7 +20,7 @@ class Solution:
 			t = t.next
 		t = head
 		result = head.copyNode
-		pdb.set_trace()
+		#pdb.set_trace()
 		while t != None:
 			if t.next != None:
 				t.copyNode.next = t.next.copyNode
